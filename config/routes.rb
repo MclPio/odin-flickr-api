@@ -3,7 +3,7 @@ Rails.application.routes.draw do
 
   # Defines the root path route ("/")
   # root "articles#index"
-  resources :static_pages, only: [:index, :show]
+  resources :static_pages
 
   root "static_pages#index"
 end
