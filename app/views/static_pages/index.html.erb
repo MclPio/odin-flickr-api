@@ -7,10 +7,10 @@
   <% end %>
 </div>
 
-<div class="container-fluid">
+<div class="container text-center">
   <% if !@user_photos.nil? %>
     <% @user_photos.each_with_index do |photo, idx| %>
-      <%= image_tag("https://live.staticflickr.com/#{photo.server}/#{photo.id}_#{photo.secret}.jpg", class: "img-fluid")%>
+      <%= image_tag("https://live.staticflickr.com/#{photo.server}/#{photo.id}_#{photo.secret}.jpg")%>
     <% end %>
   <% end %>
 </div>
