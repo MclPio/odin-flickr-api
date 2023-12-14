@@ -1,12 +1,16 @@
-<h1>ID PHOTO STREAM</h1>
-<%= form_with url: static_pages_path, method: 'get' do |form| %>
-  <%= form.label(:id, 'Flickr User ID') %>
-  <%= form.text_field(:id)%>
-  <%= form.submit 'Submit'%>
-<% end %>
-
-<ul>
-  <% @user_photos.each do |photo| %>
-    <%= image_tag("https://live.staticflickr.com/#{photo.server}/#{photo.id}_#{photo.secret}_m.jpg")%>
+<div class="container">
+  <h1>FLICKR PHOTO STREAM</h1>
+  <%= form_with url: static_pages_path, method: 'get' do |form| %>
+    <%= form.label(:id, 'Flickr User ID') %>
+    <%= form.text_field(:id)%>
+    <%= form.submit 'Submit'%>
   <% end %>
-</ul>
+</div>
+
+<div class="container-fluid">
+  <% if !@user_photos.nil? %>
+    <% @user_photos.each_with_index do |photo, idx| %>
+      <%= image_tag("https://live.staticflickr.com/#{photo.server}/#{photo.id}_#{photo.secret}.jpg", class: "img-fluid")%>
+    <% end %>
+  <% end %>
+</div>
