@@ -1,8 +1,8 @@
 # Flickr API 📷
 
 A simple Flickr API project to learn working with external API's. Enter a user ID to then retrieve and display photos in the app.
-*[Link to lesson](https://www.theodinproject.com/lessons/ruby-on-rails-flickr-api)
-*[Flickr API Doc](https://www.flickr.com/services/api/)
+* [Link to lesson](https://www.theodinproject.com/lessons/ruby-on-rails-flickr-api)
+* [Flickr API Doc](https://www.flickr.com/services/api/)
 
 ## Table of Content
 
