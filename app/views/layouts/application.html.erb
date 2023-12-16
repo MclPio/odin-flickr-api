@@ -11,6 +11,13 @@
   </head>
 
   <body>
+    <% flash.each do |type, msg| %>
+      <div class="d-flex justify-content-center">
+        <div class="alert alert-info d-inline-flex">
+          <%= msg %>
+        </div>
+      </div>
+    <% end %>
     <%= yield %>
   </body>
 </html>
