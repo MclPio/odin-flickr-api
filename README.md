@@ -20,6 +20,23 @@ install gems
 ```
 bundle install
 ```
+
+configure figaro
+```
+bundle exec figaro install
+```
+
+add you API key and shared secret to config/application.yml
+```
+flickr_api_key:
+flickr_shared_secret:
+```
+
+install bootstrap:
+```
+./bin/rails css:install:bootstrap
+```
+
 Gems used:
 1. [flickr](https://github.com/cyclotron3k/flickr)
 2. [figaro](https://github.com/laserlemon/figaro)
